@@ -1,0 +1,20 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+<table class="table">
+	<thead>
+		<tr>
+	  <th>empId</th>
+	  <th>empName</th>
+	  <th>empActive</th>
+	  <th>empDepartment</th>
+	</tr>
+	</thead>
+  <tbody>
+		<td>{{ post.pk }}</td>
+		<td>{{ post.title }}</td>
+		<td>{{ post.active }}</td>
+		<td>{{ post.dep }}</td>
+  <tbody>
+  </table>
+{% endblock %}
